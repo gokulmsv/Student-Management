@@ -8,7 +8,7 @@ studentForm.addEventListener('submit', function(event) {
     let submit = document.getElementById("submit")
 
     let nameRegex = /^[a-zA-Z]+$/
-    let ageRegex = /^\d+$/
+    let ageRegex = /^[0-9]+$/
     let genderRegex = /^[a-zA-Z]/
     let courseRegex = /^[a-zA-Z]/
     let gmailRegex = /^[a-zA-Z0-9]+@gmail\.com/
