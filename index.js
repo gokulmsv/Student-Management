@@ -1,5 +1,7 @@
 var studentForm = document.getElementById("student-form");
 
+
+
 studentForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
 
@@ -25,3 +27,4 @@ function deleteRow(button) {
     var row = button.parentNode.parentNode;
     row.parentNode.removeChild(row);
 }
+
