@@ -8,7 +8,7 @@ studentForm.addEventListener('submit', function(event) {
     let submit = document.getElementById("submit")
 
     let nameRegex = /^[a-zA-Z]+$/
-    let ageRegex = /^[0-9]+$/
+    let ageRegex = /^[1-9]\d*$/;
     let genderRegex = /^[a-zA-Z]/
     let courseRegex = /^[a-zA-Z]/
     let gmailRegex = /^[a-zA-Z0-9]+@gmail\.com/
@@ -75,7 +75,7 @@ studentForm.addEventListener('submit', function(event) {
     cell2.innerHTML = document.getElementById("age").value;
     cell3.innerHTML = document.getElementById("gender").value;
     cell4.innerHTML = document.getElementById("course").value;
-    cell5.innerHTML = document.getElementById("email").value;
+    cell5.innerHTML = document.getElementById("gmail").value;
     cell6.innerHTML = '<button onclick="deleteRow(this)">Delete</button>';
    }
 });
