@@ -18,10 +18,13 @@
             <form action="" id="student-form" class="background-image" required>
                 <label for="">Name:</label> 
                 <input type="text" required placeholder="Enter your name" id="name" required>
-                <br><br>
+                <span class="nameerror">Name must contain letter</span>
+                <br>
                 <label for="age">Age:</label>
                 <input type="text" name="" id="age" placeholder="Enter your age" required>
+                <span class="ageerror">Age must contain number</span>
                 <br>
+               
                 <label for="gender">Gender:</label>
                 <select id="gender" required>
                     <option value="" disabled selected name="gender">Select Gender</option>
@@ -29,7 +32,9 @@
                     <option value="Female" name="gender">Female</option>
                     <option value="Other" name="gender">Other</option>
                 </select>
+                <span class="gendererror">Gender must contain given below</span>
                 <br>
+
                 <label for="course">Course:</label>
                 <select id="course" required>
                     <option value="" disabled selected>Select Course</option>
@@ -38,10 +43,14 @@
                     <option value="eee">EEE</option>
                     <option value="civil">CIVIL</option>
                 </select>
+                <span class="courseerror">Course must contain given below</span>
                 <br>
+                
                 <label for="email">E-mail</label>
-                <input type="text" placeholder="Enter a e-mail" id="email" required>
+                <input type="text" placeholder="Enter a e-mail" id="gmail" required>
+                <span class="emailerror">Provide valid gmail address</span>
                 <br>
+
                 <button type="submit">ADD Student</button>
             </form>
         </div>
