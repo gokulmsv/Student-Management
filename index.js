@@ -4,7 +4,8 @@ var studentForm = document.getElementById("student-form");
 
 studentForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
-
+    
+  
     var tb1 = document.getElementById("container");
     var row = tb1.insertRow();
 
