@@ -77,7 +77,12 @@ studentForm.addEventListener('submit', function(event) {
     cell4.innerHTML = document.getElementById("course").value;
     cell5.innerHTML = document.getElementById("gmail").value;
     cell6.innerHTML = '<button onclick="deleteRow(this)">Delete</button>';
+
+    
+
    }
+
+   document.getElementById("student-form").reset();
 });
 
 function deleteRow(button) {
